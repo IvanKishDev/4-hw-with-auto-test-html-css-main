@@ -9,12 +9,14 @@
     margin: 0px auto;
     max-width: 1180px; /* ⚠️ ОБРАТИ ВНИМАНИЕ - максимальная ширина увеличилась на размер отступов, чтобы ширина контента оставалась корректной */
     /* 📍 Свойство для внутрених отступов */
+    padding: 20px;
 }
 
 body {
     font-family: "Inter", sans-serif; 
     color: #303030;
     /* 📍 Минимальная ширина */ 
+    min-width: 375px;
 }
 
 header {
@@ -210,28 +212,48 @@ footer {
 @media screen and (max-width: 1200px) {
     .main-section {
         /* 📍 Свойства для установки минимальной высоты секции по размеру контента и нижнего внутреннего отступа */
+        min-height: auto;
+        padding-bottom: 100px;
     }
 
     .main-section .wrapper {
         /* 📍 Свойства для расположения элементов и отступа между ними */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 60px;
     }
 
     .main-image {
         /* 📍 Максимальная ширина для главного изображения в % */
+        max-width: 100%;
+        height: auto;
     }
 
     .text-wrapper {
         /* 📍 Максимальная ширина для блока с текстом */
+        max-width: 100%;
     }
 
     .about-section {
     /* 📍 Внутренний отступ сверху и снизу */
+    padding: 60px 0; 
     }
+
+    .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .info-wrapper {
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
 }
 
@@ -239,18 +261,30 @@ footer {
 @media screen and (max-width: 576px) {
     .main-section {
         /* 📍 Внутренние отступы сверху и снизу */
+        padding: 30px 0 60px 0;
     }
 
     .main-section .wrapper {
         /* 📍 Отступ между изображением и блоком с текстом */
+        display: flex;
+        gap: 40px;
     }
 
     .main-title {
         /* 📍 Размер шрифта */
+        font-size: 36px;
     }
 
     .about-section .wrapper,
     .info-wrapper {
         /* 📍 Отступ между изображением и блоком с текстом */
+        display: flex;
+        gap: 16px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
     }
 }
