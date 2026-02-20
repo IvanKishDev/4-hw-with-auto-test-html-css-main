@@ -277,7 +277,7 @@ footer {
 
     .about-section .wrapper,
     .info-wrapper {
-        /* 📍 Отступ между изображением и блоком с текстом */
+        /* 📍 Отступ между изображением и блоком  текстом */
         display: flex;
         gap: 16px;
     }
