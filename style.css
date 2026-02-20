@@ -9,7 +9,7 @@
     margin: 0px auto;
     max-width: 1180px; /* ⚠️ ОБРАТИ ВНИМАНИЕ - максимальная ширина увеличилась на размер отступов, чтобы ширина контента оставалась корректной */
     /* 📍 Свойство для внутрених отступов */
-    padding: 20px;
+    padding: 0 20px;
 }
 
 body {
@@ -145,6 +145,9 @@ select:hover,
 form {
     margin-bottom: 40px;
     /* 📍 Свойства для расположения элементов (инпута и кнопки) и отступа между ними */
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
 }
 
 .text-field {
@@ -232,7 +235,7 @@ footer {
 
     .text-wrapper {
         /* 📍 Максимальная ширина для блока с текстом */
-        max-width: 100%;
+        max-width: 560px;
     }
 
     .about-section {
@@ -243,7 +246,7 @@ footer {
     .info-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 50px;
     }
 
 }
@@ -279,12 +282,7 @@ footer {
     .info-wrapper {
         /* 📍 Отступ между изображением и блоком  текстом */
         display: flex;
-        gap: 16px;
+        gap: 50px;
     }
 
-    form {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
 }
